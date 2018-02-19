@@ -68,6 +68,7 @@ public class DetailActivity extends AppCompatActivity {
             }
         }
 
+
         if(sandwich.getIngredients() != null) {
             for (String ingredient : sandwich.getIngredients()) {
                 final TextView textView = new TextView(this);
