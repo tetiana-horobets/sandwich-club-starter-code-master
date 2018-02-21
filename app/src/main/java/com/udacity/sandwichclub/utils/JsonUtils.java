@@ -11,7 +11,7 @@ import java.util.List;
 
 public class JsonUtils {
     private static final String JSON_NAME_KEY = "name";
-    private static final String JSON_MAIN_Name_KEY = "mainName";
+    private static final String JSON_MAIN_NAME_KEY = "mainName";
     private static final String JSON_ALSO_KNOWN_AS_KEY = "alsoKnownAs";
     private static final String JSON_PLACE_OF_ORIGIN_KEY = "placeOfOrigin";
     private static final String JSON_DESCRIPTION_KEY = "description";
@@ -25,7 +25,7 @@ public class JsonUtils {
             JSONObject jsonObject = new JSONObject(json);
             if (jsonObject.has(JSON_NAME_KEY)){
                 JSONObject subObject = jsonObject.getJSONObject(JSON_NAME_KEY);
-                mainName = subObject.optString(JSON_MAIN_Name_KEY);
+                mainName = subObject.optString(JSON_MAIN_NAME_KEY);
 
                 JSONArray alsoKnownAsArray = subObject.getJSONArray(JSON_ALSO_KNOWN_AS_KEY);
                 alsoKnownAsList = new ArrayList<>();
