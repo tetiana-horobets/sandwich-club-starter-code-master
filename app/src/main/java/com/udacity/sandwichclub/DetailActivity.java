@@ -58,7 +58,7 @@ public class DetailActivity extends AppCompatActivity {
 
         setTitle(sandwich.getMainName());
 
-        placeOfOriginTv.setText(sandwich.getPlaceOfOrigin() != null ? sandwich.getDescription() : "N/A");
+        placeOfOriginTv.setText(sandwich.getPlaceOfOrigin() != null ? sandwich.getPlaceOfOrigin() : "N/A");
         descriptionTv.setText(sandwich.getDescription() != null ? sandwich.getDescription() : "N/A");
         if(sandwich.getAlsoKnownAs() != null) {
             for (String knownAs : sandwich.getAlsoKnownAs()) {
