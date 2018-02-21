@@ -10,13 +10,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class JsonUtils {
-    public static final String JSON_NAME_KEY = "name";
-    public static final String JSON_MAIN_Name_KEY = "mainName";
-    public static final String JSON_ALSO_KNOWN_AS_KEY = "alsoKnownAs";
-    public static final String JSON_PLACE_OF_ORIGIN_KEY = "placeOfOrigin";
-    public static final String JSON_DESCRIPTION_KEY = "description";
-    public static final String JSON_IMAGE_KEY = "image";
-    public static final String JSON_INGREDIENTS_KEY = "ingredients";
+    private static final String JSON_NAME_KEY = "name";
+    private static final String JSON_MAIN_Name_KEY = "mainName";
+    private static final String JSON_ALSO_KNOWN_AS_KEY = "alsoKnownAs";
+    private static final String JSON_PLACE_OF_ORIGIN_KEY = "placeOfOrigin";
+    private static final String JSON_DESCRIPTION_KEY = "description";
+    private static final String JSON_IMAGE_KEY = "image";
+    private static final String JSON_INGREDIENTS_KEY = "ingredients";
 
     public static Sandwich parseSandwichJson(String json) {
         String mainName = null;
